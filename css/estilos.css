@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #2D6A4F; /* Emerald green */
-    --secondary-color: #52B788;
-    --accent-color: #D8F3DC;
-    --text-color: #1B4332;
-    --bg-color: #F8F9FA;
+    --primary-color: #1E4471; /* Azul profundo del texto TREMÜN */
+    --secondary-color: #4A89C8; /* Azul medio del ícono */
+    --accent-color: #DDE8F0; /* Azul muy claro para fondos y gradientes */
+    --text-color: #0B1622; /* Azul marino casi negro para textos */
+    --bg-color: #F7FAFC; /* Blanco con un sutil tono azulado */
 }
 
 body {
