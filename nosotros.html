@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Tremun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-glass">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">TREMUN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 my-5">
+        <div class="row align-items-center mb-5 fade-in-up">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <div class="p-5 bg-light rounded-4 shadow-sm h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                    <span class="text-muted">[Foto del Centro/Equipo]</span>
+                </div>
+            </div>
+            <div class="col-md-6 px-md-5">
+                <h1 class="fw-bold mb-4">Nuestro Equipo e Historia</h1>
+                <p class="lead text-primary">Tremun nació con la convicción de brindar una atención de salud mental cálida, profesional y accesible.</p>
+                <p class="text-muted">Contamos con profesionales interdisciplinarios altamente capacitados, unidos por el compromiso ético de acompañar a las personas en sus procesos de cambio y mejora de su calidad de vida.</p>
+            </div>
+        </div>
+        
+        <!-- Accordion Bootstrap -->
+        <h3 class="fw-bold text-center mt-5 mb-4 fade-in-up">Preguntas Frecuentes</h3>
+        <div class="accordion fade-in-up" id="faqAccordion">
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        ¿Cómo es la primera sesión?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        La primera sesión es una entrevista inicial donde nos conocemos, evaluamos el motivo de consulta y acordamos juntos la modalidad de trabajo más adecuada para ti.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Atienden obras sociales o prepagas?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-muted">
+                        Trabajamos con sistema de reintegros para la mayoría de las obras sociales y prepagas. Consulta por tu cobertura particular al contactarnos.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4 text-center mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Tremun Centro Terapéutico. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
