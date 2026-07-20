@@ -32,14 +32,11 @@ La arquitectura se organiza en tres capas, todas del lado del cliente:
 
 ```
 tremun/
-├── index.html              → página de inicio
-├── servicios.html          → servicios y tratamientos
-├── nosotros.html           → equipo, historia del centro
-├── contacto.html           → datos de contacto y formulario
+├── index.html              → landing page con todas las secciones (inicio, servicios, nosotros, contacto)
 ├── /css
 │   └── estilos.css         → estilos personalizados sobre Bootstrap
 ├── /js
-│   └── script.js           → interactividad propia adicional
+│   └── script.js           → interactividad propia adicional (animaciones, menú móvil)
 └── /img
     └── (logo, fotos del centro, íconos)
 ```

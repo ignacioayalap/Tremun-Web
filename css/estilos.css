@@ -10,7 +10,7 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
-    padding-top: 76px; /* Para el navbar fixed */
+    padding-top: 130px; /* Ajustado para el nuevo tamaño del logo en el navbar */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -50,7 +50,20 @@ body {
     background-color: var(--secondary-color);
     border-color: var(--secondary-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(45, 106, 79, 0.2) !important;
+    box-shadow: 0 6px 12px rgba(26, 70, 116, 0.2) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(26, 70, 116, 0.2) !important;
 }
 
 /* Hero Section */
@@ -103,6 +116,39 @@ body {
 .accordion-button:focus {
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.25rem rgba(82, 183, 136, 0.25);
+}
+
+/* Utilidades Landing Page */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 130px;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px; /* Sobre la barra inferior de OS */
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
 }
 
 /* Utilidades de animación */

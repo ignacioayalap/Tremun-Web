@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tremün | Centro Terapéutico</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -12,59 +13,205 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-glass">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.png" alt="Tremün Logo" height="60">
+            <a class="navbar-brand py-0" href="#inicio">
+                <img src="img/logo.png" alt="Tremün Logo" height="100">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero-section d-flex align-items-center">
+    <!-- Inicio / Hero Section -->
+    <header id="inicio" class="hero-section d-flex align-items-center">
         <div class="container text-center text-md-start">
             <div class="row align-items-center">
                 <div class="col-md-6 fade-in-up">
-                    <span class="badge bg-secondary mb-3 rounded-pill px-3 py-2 bg-opacity-10 text-primary">Atención
-                        Profesional Integral</span>
-                    <h1 class="display-4 fw-bold mb-4">Bienestar y salud para tu vida</h1>
-                    <p class="lead mb-4"><strong>"Salgo a vivir".</strong> En Tremün ofrecemos un espacio terapéutico
-                        enfocado en tu desarrollo personal y emocional, brindándote las herramientas para una vida más
-                        plena.</p>
-                    <a href="servicios.html" class="btn btn-primary btn-lg rounded-pill shadow-sm px-4">Conoce nuestros
-                        servicios</a>
+                    <span class="badge bg-secondary mb-3 rounded-pill px-3 py-2 bg-opacity-10 text-primary">Desarrollo Psicomotriz</span>
+                    <h1 class="display-4 fw-bold mb-4">Acompañamos la transición a una vida adulta</h1>
+                    <p class="lead mb-4"><strong>"Salgo a vivir".</strong> En Tremün brindamos herramientas para el desarrollo de habilidades de la vida diaria y hábitos de conducta.</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-md-start flex-wrap">
+                        <a href="https://wa.me/5492616011011" target="_blank" class="btn btn-primary btn-lg rounded-pill shadow-sm px-4 mb-2 mb-md-0">Pedí tu entrevista por WhatsApp</a>
+                        <a href="#servicios" class="btn btn-outline-primary btn-lg rounded-pill px-4">Ver servicios</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5 fade-in-up">
+                <h2 class="fw-bold display-6">Nuestros Servicios</h2>
+                <p class="lead text-muted">Acompañamos la transición a una vida adulta con enfoque en Desarrollo Psicomotriz</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4 fade-in-up">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="display-4 mb-3 text-primary">🧠</div>
+                        <h3 class="fw-bold mb-3">Hábitos de conducta</h3>
+                        <p class="text-muted">Trabajamos en el desarrollo y fortalecimiento de rutinas positivas para mejorar la adaptación y el bienestar personal.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="display-4 mb-3 text-primary">🙌</div>
+                        <h3 class="fw-bold mb-3">Habilidades para la vida diaria</h3>
+                        <p class="text-muted">Fomentamos la autonomía e independencia a través del aprendizaje de tareas cotidianas y desenvolvimiento social.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="card h-100 p-4 text-center">
+                        <div class="display-4 mb-3 text-primary">🎨</div>
+                        <h3 class="fw-bold mb-3">Talleres Integrales</h3>
+                        <p class="text-muted">Espacios dinámicos que incluyen: Pre-oficio, Arte, Multimedia, Funciones Cognitivas y Cocina.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="row align-items-center mb-5 fade-in-up">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <div class="p-5 bg-white rounded-4 shadow-sm h-100 d-flex align-items-center justify-content-center" style="min-height: 300px;">
+                        <span class="text-muted">[Foto del Centro/Equipo]</span>
+                    </div>
+                </div>
+                <div class="col-md-6 px-md-5">
+                    <h2 class="fw-bold display-6 mb-4">Nuestro Equipo e Historia</h2>
+                    <p class="lead text-primary">Tremün nació con la convicción de brindar una atención de salud mental cálida, profesional y accesible.</p>
+                    <p class="text-muted">Contamos con profesionales interdisciplinarios altamente capacitados, unidos por el compromiso ético de acompañar a las personas en sus procesos de cambio y mejora de su calidad de vida.</p>
+                </div>
+            </div>
+            
+            <!-- Accordion Bootstrap -->
+            <h3 class="fw-bold text-center mt-5 mb-4 fade-in-up">Preguntas Frecuentes</h3>
+            <div class="accordion fade-in-up mx-auto" id="faqAccordion" style="max-width: 800px;">
+                <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            ¿Cómo es la primera sesión?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            La primera sesión es una entrevista inicial donde nos conocemos, evaluamos el motivo de consulta y acordamos juntos la modalidad de trabajo más adecuada para ti.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 shadow-sm mb-3 rounded overflow-hidden">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Atienden obras sociales o prepagas?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body text-muted">
+                            Trabajamos con sistema de reintegros para la mayoría de las obras sociales y prepagas. Consulta por tu cobertura particular al contactarnos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row fade-in-up">
+                <div class="col-md-5 mb-4 mb-md-0 pe-md-5">
+                    <h2 class="fw-bold display-6 mb-4">Contáctanos</h2>
+                    <p class="lead text-muted mb-5">Estamos aquí para escucharte. Envíanos tu consulta y te responderemos a la brevedad posible.</p>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary me-3">📍</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Dirección</h5>
+                            <p class="text-muted mb-0">J. Castellanos 1342 - Dorrego</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary me-3">📱</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">WhatsApp</h5>
+                            <p class="text-muted mb-0"><a href="https://wa.me/5492616011011" target="_blank" class="text-decoration-none text-muted">+54 9 261 601-1011</a></p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-circle text-primary me-3">✉️</div>
+                        <div>
+                            <h5 class="fw-bold mb-1">Email</h5>
+                            <p class="text-muted mb-0">info@tremun.com.ar</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-7">
+                    <div class="card shadow-sm p-4 p-md-5 border-0 bg-light">
+                        <h3 class="fw-bold mb-4">Envíanos un mensaje</h3>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                    <input type="text" class="form-control form-control-lg bg-white border-0 shadow-sm" id="nombre" placeholder="Tu nombre">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                                    <input type="email" class="form-control form-control-lg bg-white border-0 shadow-sm" id="email" placeholder="tu@email.com">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensaje" class="form-label fw-semibold">Mensaje o Consulta</label>
+                                <textarea class="form-control form-control-lg bg-white border-0 shadow-sm" id="mensaje" rows="5" placeholder="¿En qué podemos ayudarte?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="bg-dark text-light py-4 text-center mt-auto">
         <div class="container">
-            <p class="mb-0">&copy; 2026 Tremün Centro Terapéutico. Todos los derechos reservados.</p>
+            <p class="mb-0 pb-4">&copy; 2026 Tremün Centro Terapéutico. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <!-- Banner Obras Sociales Fijo -->
+    <div class="fixed-bottom bg-primary text-white py-2 text-center shadow-lg" style="z-index: 1030;">
+        <div class="container">
+            <p class="mb-0 fw-medium" style="font-size: 0.95rem; letter-spacing: 0.3px;">
+                Recibimos Obras Sociales y Medicina Prepaga — <strong>Consultanos por tu cobertura</strong>
+            </p>
+        </div>
+    </div>
 
     <!-- Botón Flotante WhatsApp -->
     <a href="https://wa.me/5492616011011" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
         id="whatsapp-btn" aria-label="Contactar por WhatsApp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
         </svg>
     </a>
 
@@ -72,5 +219,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
-
 </html>
