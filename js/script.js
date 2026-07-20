@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // Cerrar el menú en móviles al hacer clic en un enlace
+    const navLinks = document.querySelectorAll('.nav-link');
+    const menuToggle = document.getElementById('navbarNav');
+    
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => {
+            if (menuToggle.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(menuToggle) || new bootstrap.Collapse(menuToggle, {toggle: false});
+                bsCollapse.hide();
+            }
+        });
+    });
+
     // Intersección Observer para animaciones suaves al hacer scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

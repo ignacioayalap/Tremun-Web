@@ -118,6 +118,39 @@ body {
     box-shadow: 0 0 0 0.25rem rgba(82, 183, 136, 0.25);
 }
 
+/* Utilidades Landing Page */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 130px;
+}
+
+/* WhatsApp Float */
+.whatsapp-float {
+    position: fixed;
+    bottom: 80px; /* Sobre la barra inferior de OS */
+    right: 20px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    color: #fff;
+}
+
 /* Utilidades de animación */
 .fade-in-up {
     animation: fadeInUp 0.8s ease-out forwards;
