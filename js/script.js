@@ -50,19 +50,31 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const nombre = document.getElementById('nombre').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const telefono = document.getElementById('telefono').value.trim();
+            const vinculoEl = document.getElementById('vinculo');
+            const vinculo = vinculoEl ? vinculoEl.value : '';
+            const edadGroupEl = document.getElementById('edadGroup');
+            const edadGroup = edadGroupEl ? edadGroupEl.value : '';
             const mensaje = document.getElementById('mensaje').value.trim();
+
+            const serviciosSeleccionados = [];
+            document.querySelectorAll('input[name="servicios_interes"]:checked').forEach(cb => {
+                serviciosSeleccionados.push(cb.value);
+            });
 
             const lineas = [
                 `Hola Tremün, mi nombre es ${nombre}.`,
-                '',
-                mensaje,
-                '',
-                '— Datos de contacto —',
-                `Email: ${email}`
+                ''
             ];
-            if (telefono) lineas.push(`Teléfono: ${telefono}`);
+
+            if (vinculo) lineas.push(`• Vínculo con el interesado/a: ${vinculo}`);
+            if (edadGroup) lineas.push(`• Rango de edad: ${edadGroup}`);
+            if (serviciosSeleccionados.length > 0) {
+                lineas.push(`• Servicios de interés: ${serviciosSeleccionados.join(', ')}`);
+            }
+
+            lineas.push('');
+            lineas.push('• Situación y necesidades:');
+            lineas.push(mensaje);
 
             const texto = encodeURIComponent(lineas.join('\n'));
             window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${texto}`, '_blank', 'noopener');

@@ -157,6 +157,97 @@ button:focus-visible,
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
+/* Sección Servicios con Imagen de Fondo */
+#servicios {
+    background-image: url('../img/servicios-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#servicios .card {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Carrusel de Servicios en Tarjetas */
+.service-carousel {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-placeholder {
+    height: 180px;
+    border-radius: 12px;
+}
+
+.bg-slide-1 {
+    background: linear-gradient(135deg, #1E4471 0%, #3469A7 100%);
+}
+
+.bg-slide-2 {
+    background: linear-gradient(135deg, #4A89C8 0%, #1E4471 100%);
+}
+
+.bg-slide-3 {
+    background: linear-gradient(135deg, #2E7D32 0%, #66BB6A 100%);
+}
+
+.bg-slide-4 {
+    background: linear-gradient(135deg, #E65100 0%, #FFA726 100%);
+}
+
+.bg-slide-5 {
+    background: linear-gradient(135deg, #6A1B9A 0%, #AB47BC 100%);
+}
+
+.bg-slide-6 {
+    background: linear-gradient(135deg, #00838F 0%, #26A69A 100%);
+}
+
+.service-carousel .carousel-control-prev,
+.service-carousel .carousel-control-next {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.85;
+    transition: all 0.25s ease;
+}
+
+.service-carousel .carousel-control-prev {
+    left: 8px;
+}
+
+.service-carousel .carousel-control-next {
+    right: 8px;
+}
+
+.service-carousel .carousel-control-prev:hover,
+.service-carousel .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.service-carousel .carousel-indicators {
+    margin-bottom: 8px;
+}
+
+.service-carousel .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
 /* Círculo de ícono (servicios y contacto) */
 .icon-circle {
     width: 76px;

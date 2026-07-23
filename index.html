@@ -131,7 +131,7 @@
     </header>
 
     <!-- Servicios Section -->
-    <section id="servicios" class="py-5 bg-white">
+    <section id="servicios" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5 fade-in-up">
                 <h2 class="fw-bold display-6">Nuestros Servicios</h2>
@@ -142,8 +142,55 @@
             <div class="row g-4">
                 <div class="col-md-4 fade-in-up">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Hábitos de conducta) -->
+                        <div id="carouselHabitos" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-1 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-arrow-repeat fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-2 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-check-circle fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-3 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-journal-check fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabitos"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHabitos"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Hábitos de conducta</h3>
                         <p class="text-muted">Trabajamos en el desarrollo y fortalecimiento de rutinas positivas para
@@ -152,8 +199,55 @@
                 </div>
                 <div class="col-md-4 fade-in-up" style="animation-delay: 0.2s;">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-house-heart" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Habilidades para la vida diaria) -->
+                        <div id="carouselHabilidades" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-4 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-house-heart fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-2 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-person-arms-up fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-6 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-sun fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabilidades"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHabilidades"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Habilidades para la vida diaria</h3>
                         <p class="text-muted">Fomentamos la autonomía e independencia a través del aprendizaje de tareas
@@ -162,8 +256,55 @@
                 </div>
                 <div class="col-md-4 fade-in-up" style="animation-delay: 0.4s;">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-palette" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Talleres Integrales) -->
+                        <div id="carouselTalleres" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-5 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-palette fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-3 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-brush fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-1 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-tools fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Talleres Integrales</h3>
                         <p class="text-muted">Espacios dinámicos que incluyen: Pre-oficio, Arte, Multimedia, Funciones
@@ -187,8 +328,8 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="step-card text-center fade-in-up">
                         <span class="step-number mx-auto">1</span>
-                        <h3 class="h5 fw-bold mb-2">Nos escribís</h3>
-                        <p class="text-muted mb-0">Contactás por WhatsApp o el formulario y nos contás brevemente tu
+                        <h3 class="h5 fw-bold mb-2">Escribinos</h3>
+                        <p class="text-muted mb-0">Contactás por WhatsApp y nos contás brevemente tu
                             consulta.</p>
                     </div>
                 </div>
@@ -217,13 +358,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="text-center mt-5 fade-in-up">
-                <a href="https://wa.me/5492616011011" target="_blank" rel="noopener"
-                    class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
-                    <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Agendá tu entrevista
-                </a>
-            </div>
         </div>
     </section>
 
@@ -246,8 +380,9 @@
                     <h2 class="fw-bold display-6 mb-4">Nuestro Equipo e Historia</h2>
                     <p class="lead text-primary">Tremün nació con la convicción de brindar una atención de salud mental
                         cálida, profesional y accesible.</p>
-                    <p class="text-muted">Contamos con profesionales interdisciplinarios altamente capacitados, unidos
-                        por el compromiso ético de acompañar a las personas en sus procesos de cambio y mejora de su
+                    <p class="text-muted">Somos un grupo de profesionales interdisciplinarios altamente capacitados,
+                        unidos
+                        por el compromiso de acompañar a las personas en sus procesos de cambio y mejorar su
                         calidad de vida.</p>
                     <!-- Recomendación: sumá aquí a los profesionales con nombre, profesión y matrícula.
                          Genera muchísima confianza en las familias que están decidiendo. -->
@@ -268,7 +403,8 @@
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-muted">
                             <!-- Ajustá esta respuesta a la población real que atienden (edades, perfiles). -->
-                            Acompañamos a adolescentes y jóvenes adultos con discapacidad que buscan desarrollar su
+                            Acompañamos a adolescentes y jóvenes adultos con capacidades diferentes que buscan
+                            desarrollar su
                             autonomía, habilidades para la vida diaria y hábitos de conducta. Si tenés dudas sobre tu
                             caso particular, escribinos y lo conversamos.
                         </div>
@@ -378,33 +514,79 @@
                         <form id="contactForm" novalidate>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                    <label for="nombre" class="form-label fw-semibold">Nombre de quien nos escribe</label>
                                     <input type="text" name="nombre"
                                         class="form-control form-control-lg bg-light border-0 shadow-sm" id="nombre"
-                                        placeholder="Tu nombre" required>
+                                        placeholder="Ej: María González" required>
                                     <div class="invalid-feedback">Por favor, ingresá tu nombre.</div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                                    <input type="email" name="email"
-                                        class="form-control form-control-lg bg-light border-0 shadow-sm" id="email"
-                                        placeholder="tu@email.com" required>
-                                    <div class="invalid-feedback">Ingresá un correo válido.</div>
+                                    <label for="vinculo" class="form-label fw-semibold">¿Quién requiere la atención?</label>
+                                    <select name="vinculo" id="vinculo" class="form-select form-select-lg bg-light border-0 shadow-sm" required>
+                                        <option value="" selected disabled>Seleccioná una opción...</option>
+                                        <option value="Mi hijo/a o familiar">Mi hijo/a o familiar a cargo</option>
+                                        <option value="Para mí">Para mí</option>
+                                        <option value="Profesional / Derivación">Soy profesional / Derivación</option>
+                                        <option value="Otro vínculo">Otro vínculo</option>
+                                    </select>
+                                    <div class="invalid-feedback">Seleccioná una opción.</div>
                                 </div>
                             </div>
+
                             <div class="mb-3">
-                                <label for="telefono" class="form-label fw-semibold">Teléfono <span
-                                        class="text-muted fw-normal">(opcional)</span></label>
-                                <input type="tel" name="telefono"
-                                    class="form-control form-control-lg bg-light border-0 shadow-sm" id="telefono"
-                                    placeholder="+54 9 261 ...">
+                                <label for="edadGroup" class="form-label fw-semibold">Rango de edad de la persona</label>
+                                <select name="edadGroup" id="edadGroup" class="form-select form-select-lg bg-light border-0 shadow-sm">
+                                    <option value="" selected disabled>Seleccioná la edad aproximada...</option>
+                                    <option value="Adolescente (12-17 años)">Adolescente (12-17 años)</option>
+                                    <option value="Joven adulto (18-25 años)">Joven adulto (18-25 años)</option>
+                                    <option value="Adulto (26+ años)">Adulto (26 años en adelante)</option>
+                                </select>
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold d-block">Áreas de interés o servicios que buscan</label>
+                                <div class="row g-2 bg-light p-3 rounded-3 shadow-sm border-0">
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes" value="Hábitos de conducta" id="checkHabitos">
+                                            <label class="form-check-label text-secondary" for="checkHabitos">
+                                                Hábitos de conducta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes" value="Habilidades para la vida diaria" id="checkHabilidades">
+                                            <label class="form-check-label text-secondary" for="checkHabilidades">
+                                                Habilidades de vida diaria
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes" value="Talleres integrales" id="checkTalleres">
+                                            <label class="form-check-label text-secondary" for="checkTalleres">
+                                                Talleres integrales
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes" value="Orientación general / Primera entrevista" id="checkOrientacion">
+                                            <label class="form-check-label text-secondary" for="checkOrientacion">
+                                                Orientación general
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="mb-4">
-                                <label for="mensaje" class="form-label fw-semibold">Mensaje o consulta</label>
+                                <label for="mensaje" class="form-label fw-semibold">Situación actual y necesidades</label>
                                 <textarea name="mensaje"
                                     class="form-control form-control-lg bg-light border-0 shadow-sm" id="mensaje"
-                                    rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                                <div class="invalid-feedback">Contanos brevemente tu consulta.</div>
+                                    rows="4" placeholder="Ej: Contanos brevemente sus intereses, rutinas actuales, o qué objetivos o habilidades les gustaría desarrollar en Tremün..." required></textarea>
+                                <div class="invalid-feedback">Contanos brevemente tu consulta o situación.</div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold">
                                 <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Enviar por WhatsApp
