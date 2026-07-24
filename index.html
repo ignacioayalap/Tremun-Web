@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tremün | Centro Terapéutico en Mendoza — Desarrollo Psicomotriz y autonomía</title>
+    <title>Tremün | Centro Terapéutico — Desarrollo Psicomotriz y autonomía</title>
 
     <!-- SEO -->
     <meta name="description"
@@ -16,7 +16,7 @@
     <!-- Open Graph (cómo se ve el enlace al compartir por WhatsApp / redes) -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Tremün Centro Terapéutico">
-    <meta property="og:title" content="Tremün | Centro Terapéutico en Mendoza">
+    <meta property="og:title" content="Tremün | Centro Terapéutico">
     <meta property="og:description"
         content="Acompañamos la transición a la vida adulta: habilidades para la vida diaria, hábitos de conducta y talleres integrales.">
     <meta property="og:url" content="https://www.tremun.com.ar/">
@@ -25,7 +25,7 @@
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tremün | Centro Terapéutico en Mendoza">
+    <meta name="twitter:title" content="Tremün | Centro Terapéutico">
     <meta name="twitter:description"
         content="Acompañamos la transición a la vida adulta con enfoque en Desarrollo Psicomotriz.">
     <meta name="twitter:image" content="https://www.tremun.com.ar/img/logo.png">
@@ -106,7 +106,7 @@
                     <!-- Ajustá edades y perfiles según la población real que atienden -->
                     <p class="lead mb-3"><strong>"Salgo a vivir".</strong> En Tremün brindamos herramientas para el
                         desarrollo de habilidades de la vida diaria y hábitos de conducta.</p>
-                    <p class="text-muted mb-4">Un espacio para adolescentes y jóvenes adultos con discapacidad en su
+                    <p class="text-muted mb-4">Un espacio para adolescentes y jóvenes adultos en su
                         camino hacia la autonomía.</p>
                     <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
                         <a href="https://wa.me/5492616011011" target="_blank" rel="noopener"
@@ -131,43 +131,186 @@
     </header>
 
     <!-- Servicios Section -->
-    <section id="servicios" class="py-5 bg-white">
+    <section id="servicios" class="py-5">
         <div class="container py-5">
             <div class="text-center mb-5 fade-in-up">
                 <h2 class="fw-bold display-6">Nuestros Servicios</h2>
                 <p class="lead text-muted">Acompañamos la transición a una vida adulta con enfoque en Desarrollo
-                    Psicomotriz</p>
+                    Psicomotriz, adquisición de hábitos, habilidades para la vida diaria y talleres integrales.</p>
             </div>
 
             <div class="row g-4">
                 <div class="col-md-4 fade-in-up">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-arrow-repeat" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Hábitos de conducta) -->
+                        <div id="carouselHabitos" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselHabitos" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-1 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-arrow-repeat fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-2 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-check-circle fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-3 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-journal-check fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Hábitos — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabitos"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHabitos"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Hábitos de conducta</h3>
                         <p class="text-muted">Trabajamos en el desarrollo y fortalecimiento de rutinas positivas para
-                            mejorar la adaptación y el bienestar personal.</p>
+                            mejorar la autonomía, comportamiento, comunicación y el bienestar personal.</p>
                     </div>
                 </div>
                 <div class="col-md-4 fade-in-up" style="animation-delay: 0.2s;">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-house-heart" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Habilidades para la vida diaria) -->
+                        <div id="carouselHabilidades" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselHabilidades" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-4 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-house-heart fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-2 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-person-arms-up fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-6 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-sun fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Habilidades — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHabilidades"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHabilidades"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Habilidades para la vida diaria</h3>
-                        <p class="text-muted">Fomentamos la autonomía e independencia a través del aprendizaje de tareas
+                        <p class="text-muted">Para su transición a la adultez fomentamos la autonomía, autovalimiento y
+                            su independencia a través del aprendizaje de tareas
                             cotidianas y desenvolvimiento social.</p>
                     </div>
                 </div>
                 <div class="col-md-4 fade-in-up" style="animation-delay: 0.4s;">
                     <div class="card h-100 p-4 text-center">
-                        <div class="icon-circle mx-auto mb-3">
-                            <i class="bi bi-palette" aria-hidden="true"></i>
+                        <!-- Carrusel de imágenes (Talleres Integrales) -->
+                        <div id="carouselTalleres" class="carousel slide service-carousel mb-3" data-bs-ride="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Imagen 1"></button>
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="1"
+                                    aria-label="Imagen 2"></button>
+                                <button type="button" data-bs-target="#carouselTalleres" data-bs-slide-to="2"
+                                    aria-label="Imagen 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <div
+                                        class="carousel-placeholder bg-slide-5 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-palette fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 1</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-3 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-brush fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 2</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div
+                                        class="carousel-placeholder bg-slide-1 d-flex flex-column align-items-center justify-content-center text-white p-3">
+                                        <i class="bi bi-tools fs-1 mb-2"></i>
+                                        <span class="fw-bold fs-6">Talleres — Imagen 3</span>
+                                        <small class="opacity-75" style="font-size: 0.78rem;">(Espacio para foto
+                                            posterior)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTalleres"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselTalleres"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                         <h3 class="fw-bold mb-3 h4">Talleres Integrales</h3>
-                        <p class="text-muted">Espacios dinámicos que incluyen: Pre-oficio, Arte, Multimedia, Funciones
-                            Cognitivas y Cocina.</p>
+                        <p class="text-muted">Espacios dinámicos que incluyen: Habilidades de Pre-oficio, Arte,
+                            Multimedia y Computación, Funciones
+                            Cognitivas y Cocina, Expresión Corporal y Osio.</p>
                     </div>
                 </div>
             </div>
@@ -179,7 +322,8 @@
         <div class="container py-5">
             <div class="text-center mb-5 fade-in-up">
                 <h2 class="fw-bold display-6">Cómo empezar</h2>
-                <p class="lead text-muted">Un primer paso simple y sin compromiso. Te acompañamos en todo el proceso.
+                <p class="lead text-muted">Un primer paso simple para un gran progreso. Te acompañamos en todo el
+                    proceso.
                 </p>
             </div>
 
@@ -187,16 +331,15 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="step-card text-center fade-in-up">
                         <span class="step-number mx-auto">1</span>
-                        <h3 class="h5 fw-bold mb-2">Nos escribís</h3>
-                        <p class="text-muted mb-0">Contactás por WhatsApp o el formulario y nos contás brevemente tu
-                            consulta.</p>
+                        <h3 class="h5 fw-bold mb-2">Escribinos</h3>
+                        <p class="text-muted mb-0">Contactanos por Whatsapp y coordinamos una entrevista.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="step-card text-center fade-in-up" style="animation-delay: 0.1s;">
                         <span class="step-number mx-auto">2</span>
                         <h3 class="h5 fw-bold mb-2">Entrevista inicial</h3>
-                        <p class="text-muted mb-0">Nos conocemos, escuchamos el motivo de consulta y respondemos tus
+                        <p class="text-muted mb-0">Nos conocemos, escuchamos tu particularidad y respondemos tus
                             dudas.</p>
                     </div>
                 </div>
@@ -204,7 +347,8 @@
                     <div class="step-card text-center fade-in-up" style="animation-delay: 0.2s;">
                         <span class="step-number mx-auto">3</span>
                         <h3 class="h5 fw-bold mb-2">Evaluación</h3>
-                        <p class="text-muted mb-0">El equipo interdisciplinario evalúa necesidades, intereses y
+                        <p class="text-muted mb-0">Con nuestro equipo interdisciplinario evaluamos necesidades,
+                            intereses y
                             objetivos.</p>
                     </div>
                 </div>
@@ -216,13 +360,6 @@
                         </p>
                     </div>
                 </div>
-            </div>
-
-            <div class="text-center mt-5 fade-in-up">
-                <a href="https://wa.me/5492616011011" target="_blank" rel="noopener"
-                    class="btn btn-primary btn-lg rounded-pill px-4 shadow-sm">
-                    <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Agendá tu entrevista
-                </a>
             </div>
         </div>
     </section>
@@ -243,12 +380,12 @@
                     </div>
                 </div>
                 <div class="col-md-6 px-md-5">
-                    <h2 class="fw-bold display-6 mb-4">Nuestro Equipo e Historia</h2>
-                    <p class="lead text-primary">Tremün nació con la convicción de brindar una atención de salud mental
-                        cálida, profesional y accesible.</p>
-                    <p class="text-muted">Contamos con profesionales interdisciplinarios altamente capacitados, unidos
-                        por el compromiso ético de acompañar a las personas en sus procesos de cambio y mejora de su
-                        calidad de vida.</p>
+                    <h2 class="fw-bold display-6 mb-4">Nuestro Equipo y Trayectoria</h2>
+                    <p class="lead text-primary">Somos un grupo de profesionales interdisciplinarios,
+                        unidos
+                        por el compromiso de acompañar a los jóvenes en sus procesos de cambio a la vida adultaa,
+                        mejorando su
+                        calidad de vida y la de su familia.</p>
                     <!-- Recomendación: sumá aquí a los profesionales con nombre, profesión y matrícula.
                          Genera muchísima confianza en las familias que están decidiendo. -->
                 </div>
@@ -268,8 +405,11 @@
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-muted">
                             <!-- Ajustá esta respuesta a la población real que atienden (edades, perfiles). -->
-                            Acompañamos a adolescentes y jóvenes adultos con discapacidad que buscan desarrollar su
-                            autonomía, habilidades para la vida diaria y hábitos de conducta. Si tenés dudas sobre tu
+                            Acompañamos a adolescentes y jóvenes adultos con capacidades diferentes que transitan la
+                            transición a la vida adulta para
+                            desarrollar
+                            autonomía y autoestima, habilidades para la vida diaria y hábitos de conducta. Si tenés
+                            dudas sobre tu
                             caso particular, escribinos y lo conversamos.
                         </div>
                     </div>
@@ -278,14 +418,14 @@
                     <h3 class="accordion-header" id="headingOne">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            ¿Cómo es la primera sesión?
+                            ¿Cómo es el proceso de admisión?
                         </button>
                     </h3>
                     <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-muted">
-                            La primera sesión es una entrevista inicial donde nos conocemos, evaluamos el motivo de
-                            consulta y acordamos juntos la modalidad de trabajo más adecuada para vos.
+                            El primer paso es una entrevista inicial donde nos conocemos, evaluamos el motivo de
+                            consulta y acordamos juntos el programa de trabajo más adecuado.
                         </div>
                     </div>
                 </div>
@@ -293,14 +433,14 @@
                     <h3 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Atienden obras sociales o prepagas?
+                            ¿Atienden obras sociales o medicina prepaga?
                         </button>
                     </h3>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#faqAccordion">
                         <div class="accordion-body text-muted">
-                            Trabajamos con sistema de reintegros para la mayoría de las obras sociales y prepagas.
-                            Consultá por tu cobertura particular al contactarnos.
+                            Trabajamos con obras sociales y prepagas.
+                            Consultá por tu cobertura particular al especificarnos tu obra social y plan.
                         </div>
                     </div>
                 </div>
@@ -356,7 +496,7 @@
                         <div>
                             <h3 class="fw-bold mb-1 h6">Horarios de atención</h3>
                             <!-- Ajustá los horarios reales -->
-                            <p class="text-muted mb-0">Lunes a viernes, 9:00 a 18:00 h</p>
+                            <p class="text-muted mb-0">Lunes a viernes, 15:00 a 19:00 h</p>
                         </div>
                     </div>
 
@@ -378,33 +518,92 @@
                         <form id="contactForm" novalidate>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="nombre" class="form-label fw-semibold">Nombre completo</label>
+                                    <label for="nombre" class="form-label fw-semibold">Nombre de quien nos
+                                        escribe</label>
                                     <input type="text" name="nombre"
                                         class="form-control form-control-lg bg-light border-0 shadow-sm" id="nombre"
-                                        placeholder="Tu nombre" required>
+                                        placeholder="Ej: María González" required>
                                     <div class="invalid-feedback">Por favor, ingresá tu nombre.</div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label fw-semibold">Correo electrónico</label>
-                                    <input type="email" name="email"
-                                        class="form-control form-control-lg bg-light border-0 shadow-sm" id="email"
-                                        placeholder="tu@email.com" required>
-                                    <div class="invalid-feedback">Ingresá un correo válido.</div>
+                                    <label for="vinculo" class="form-label fw-semibold">¿Quién requiere la
+                                        atención?</label>
+                                    <select name="vinculo" id="vinculo"
+                                        class="form-select form-select-lg bg-light border-0 shadow-sm" required>
+                                        <option value="" selected disabled>Seleccioná una opción...</option>
+                                        <option value="Mi hijo/a o familiar">Mi hijo/a o familiar a cargo</option>
+                                        <option value="Para mí">Para mí</option>
+                                        <option value="Profesional / Derivación">Soy profesional / Derivación</option>
+                                        <option value="Otro vínculo">Otro vínculo</option>
+                                    </select>
+                                    <div class="invalid-feedback">Seleccioná una opción.</div>
                                 </div>
                             </div>
+
                             <div class="mb-3">
-                                <label for="telefono" class="form-label fw-semibold">Teléfono <span
-                                        class="text-muted fw-normal">(opcional)</span></label>
-                                <input type="tel" name="telefono"
-                                    class="form-control form-control-lg bg-light border-0 shadow-sm" id="telefono"
-                                    placeholder="+54 9 261 ...">
+                                <label for="edadGroup" class="form-label fw-semibold">Rango de edad de la
+                                    persona</label>
+                                <select name="edadGroup" id="edadGroup"
+                                    class="form-select form-select-lg bg-light border-0 shadow-sm">
+                                    <option value="" selected disabled>Seleccioná la edad aproximada...</option>
+                                    <option value="Adolescente (12-17 años)">Adolescente (12-17 años)</option>
+                                    <option value="Joven adulto (18-25 años)">Joven adulto (18-25 años)</option>
+                                    <option value="Adulto (26+ años)">Adulto (26 años en adelante)</option>
+                                </select>
                             </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold d-block">Áreas de interés o servicios que
+                                    buscan</label>
+                                <div class="row g-2 bg-light p-3 rounded-3 shadow-sm border-0">
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes"
+                                                value="Hábitos de conducta" id="checkHabitos">
+                                            <label class="form-check-label text-secondary" for="checkHabitos">
+                                                Hábitos de conducta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes"
+                                                value="Habilidades para la vida diaria" id="checkHabilidades">
+                                            <label class="form-check-label text-secondary" for="checkHabilidades">
+                                                Habilidades de vida diaria
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes"
+                                                value="Talleres integrales" id="checkTalleres">
+                                            <label class="form-check-label text-secondary" for="checkTalleres">
+                                                Talleres integrales
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="servicios_interes"
+                                                value="Orientación general / Primera entrevista" id="checkOrientacion">
+                                            <label class="form-check-label text-secondary" for="checkOrientacion">
+                                                Orientación general
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="mb-4">
-                                <label for="mensaje" class="form-label fw-semibold">Mensaje o consulta</label>
+                                <label for="mensaje" class="form-label fw-semibold">Situación actual y
+                                    necesidades</label>
                                 <textarea name="mensaje"
                                     class="form-control form-control-lg bg-light border-0 shadow-sm" id="mensaje"
-                                    rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
-                                <div class="invalid-feedback">Contanos brevemente tu consulta.</div>
+                                    rows="4"
+                                    placeholder="Ej: Contanos brevemente sus intereses, rutinas actuales, o qué objetivos o habilidades les gustaría desarrollar en Tremün..."
+                                    required></textarea>
+                                <div class="invalid-feedback">Contanos brevemente tu consulta o situación.</div>
                             </div>
                             <button type="submit" class="btn btn-primary btn-lg w-100 rounded-pill fw-bold">
                                 <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>Enviar por WhatsApp
@@ -426,6 +625,7 @@
     <footer class="bg-dark text-light py-4 text-center mt-auto">
         <div class="container">
             <p class="mb-0">&copy; 2026 Tremün Centro Terapéutico. Todos los derechos reservados.</p>
+            <p class="mb-0">Desarrollado por <strong>MAYLO Software</strong></p>
         </div>
     </footer>
 
