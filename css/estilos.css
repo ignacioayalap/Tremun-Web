@@ -173,6 +173,22 @@ button:focus-visible,
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+/* Sección Contacto con Imagen de Fondo */
+#contacto {
+    background-image: url('../img/contacto-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#contacto .card {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
 /* Carrusel de Servicios en Tarjetas */
 .service-carousel {
     position: relative;
