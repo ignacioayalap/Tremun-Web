@@ -17,10 +17,6 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
-    padding-top: 130px;
-    /* Ajustado para el nuevo tamaño del logo en el navbar */
-    padding-bottom: 60px;
-    /* Espacio para el banner fijo inferior de Obras Sociales */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -107,7 +103,9 @@ button:focus-visible,
 
 /* Hero Section */
 .hero-section {
-    min-height: calc(100vh - 76px);
+    min-height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 60px;
     background: linear-gradient(135deg, var(--accent-color) 0%, rgba(255, 255, 255, 1) 100%);
     position: relative;
     overflow: hidden;
@@ -173,6 +171,29 @@ button:focus-visible,
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+/* Sección Contacto con Imagen de Fondo */
+#contacto {
+    background-image: url('../img/Gemini_Generated_Image_bufxu0bufxu0bufx.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Panel detrás de la información de contacto y el formulario */
+#contacto .contacto-layout {
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+#contacto .card {
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
 /* Carrusel de Servicios en Tarjetas */
 .service-carousel {
     position: relative;
@@ -183,6 +204,13 @@ button:focus-visible,
 
 .carousel-placeholder {
     height: 180px;
+    border-radius: 12px;
+}
+
+.service-carousel .carousel-item img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
     border-radius: 12px;
 }
 
@@ -349,6 +377,13 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Footer */
+footer,
+.footer-section {
+    padding-top: 1.5rem;
+    padding-bottom: 60px !important;
 }
 
 /* ============================================
