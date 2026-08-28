@@ -17,10 +17,6 @@ body {
     font-family: 'Outfit', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
-    padding-top: 130px;
-    /* Ajustado para el nuevo tamaño del logo en el navbar */
-    padding-bottom: 60px;
-    /* Espacio para el banner fijo inferior de Obras Sociales */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -107,7 +103,9 @@ button:focus-visible,
 
 /* Hero Section */
 .hero-section {
-    min-height: calc(100vh - 76px);
+    min-height: 100vh;
+    padding-top: 140px;
+    padding-bottom: 60px;
     background: linear-gradient(135deg, var(--accent-color) 0%, rgba(255, 255, 255, 1) 100%);
     position: relative;
     overflow: hidden;
@@ -356,6 +354,13 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Footer */
+footer,
+.footer-section {
+    padding-top: 1.5rem;
+    padding-bottom: 60px !important;
 }
 
 /* ============================================
