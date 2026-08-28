@@ -171,53 +171,26 @@ button:focus-visible,
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
-/* Sección Contacto — fondo claro con imagen decorativa en bordes */
+/* Sección Contacto con Imagen de Fondo */
 #contacto {
-    background-color: var(--bg-color);
-    position: relative;
-    overflow: hidden;
-}
-
-/* Imagen de puzzles como decoración en bordes izquierdo y derecho */
-#contacto::before,
-#contacto::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 220px;
-    background-image: url('../img/contacto-bg.jpg');
-    background-size: auto 100%;
+    background-image: url('../img/Gemini_Generated_Image_bufxu0bufxu0bufx.jpg');
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.85;
-}
-
-#contacto::before {
-    left: 0;
-    background-position: left center;
-}
-
-#contacto::after {
-    right: 0;
-    background-position: right center;
-}
-
-/* El contenedor principal queda encima de los pseudo-elementos */
-#contacto > .container {
     position: relative;
-    z-index: 1;
 }
 
-/* Card del layout con fondo blanco sólido */
+/* Panel detrás de la información de contacto y el formulario */
 #contacto .contacto-layout {
-    background: #ffffff;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
 }
 
 #contacto .card {
-    background: var(--bg-color);
+    background: rgba(255, 255, 255, 0.92);
     border: 1px solid rgba(0, 0, 0, 0.05) !important;
 }
 
