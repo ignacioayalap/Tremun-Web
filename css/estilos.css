@@ -307,6 +307,12 @@ button:focus-visible,
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
 }
 
+.step-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+}
+
 .step-number {
     width: 46px;
     height: 46px;
