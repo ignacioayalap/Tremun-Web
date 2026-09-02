@@ -88,7 +88,6 @@
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#como-empezar">Cómo empezar</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -116,12 +115,61 @@
                     </div>
                 </div>
                 <div class="col-lg-6 fade-in-up" style="animation-delay: 0.2s;">
-                    <!-- Reemplazá el contenido de .hero-media por una foto real del centro:
-                         <div class="hero-media"><img src="img/hero.jpg" alt="Espacio de Tremün"></div> -->
-                    <div class="hero-media d-flex align-items-center justify-content-center text-white text-center p-4">
-                        <div>
-                            <i class="bi bi-image fs-1 d-block mb-2 opacity-75" aria-hidden="true"></i>
-                            <span class="opacity-75">Foto del centro / equipo</span>
+                    <div class="hero-media">
+                        <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel" data-bs-interval="3500" data-bs-pause="hover">
+                            <!-- Indicadores -->
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Foto 2"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Foto 3"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Foto 4"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Foto 5"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Foto 6"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6" aria-label="Foto 7"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7" aria-label="Foto 8"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8" aria-label="Foto 9"></button>
+                            </div>
+
+                            <!-- Slides -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/HabitosVD1.png" class="d-block w-100" alt="Habilidades para la vida diaria en Tremün" loading="eager">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/HabitosCon1.png" class="d-block w-100" alt="Hábitos de conducta en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/tallerArte1.png" class="d-block w-100" alt="Talleres Integrales y Arte en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/HabitosVD2.png" class="d-block w-100" alt="Desarrollo de autonomía en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/HabitosCon2.png" class="d-block w-100" alt="Rutinas y bienestar personal en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TallerArte2.png" class="d-block w-100" alt="Expresión y creatividad en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/HabitosVD3.png" class="d-block w-100" alt="Independencia y vida diaria en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/HabitosCon3.png" class="d-block w-100" alt="Convivencia y habilidades sociales en Tremün" loading="lazy">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/TallerArte3.png" class="d-block w-100" alt="Talleres y pre-oficio en Tremün" loading="lazy">
+                                </div>
+                            </div>
+
+                            <!-- Controles Anterior / Siguiente -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Foto anterior">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Foto siguiente">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -499,7 +547,7 @@
     <footer class="footer-section bg-dark text-light text-center mt-auto">
         <div class="container">
             <p class="mb-0">&copy; 2026 Tremün Centro Terapéutico. Todos los derechos reservados.</p>
-            <p class="mb-0">Desarrollado por <strong>F97 Software</strong></p>
+            <p class="mb-0">Desarrollado por <strong>&copy; F97 Software</strong></p>
         </div>
     </footer>
 
