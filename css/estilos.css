@@ -257,7 +257,7 @@ button:focus-visible,
 
 /* Sección Servicios con Imagen de Fondo */
 #servicios {
-    background-image: url('../img/servicios-bg.png');
+    background-image: url('../img/servicios-bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ button:focus-visible,
 
 /* Sección Contacto con Imagen de Fondo */
 #contacto {
-    background-image: url('../img/Gemini_Generated_Image_bufxu0bufxu0bufx.jpg');
+    background-image: url('../img/Gemini_Generated_Image_bufxu0bufxu0bufx.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
